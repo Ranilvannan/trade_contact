@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+trade_contact_admin,trade.contact.admin,model_trade_contact,trade_contact_admin,1,1,1,1
+sag_mart_admin,sag.mart.admin,model_sag_mart,sag_mart_admin,1,1,1,1

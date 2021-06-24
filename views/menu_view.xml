@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="contact_menu" name="Contact" sequence="10"/>
+
+</odoo>

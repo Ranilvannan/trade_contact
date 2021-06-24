@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="trade_contact_form" model="ir.ui.view">
+        <field name="name">trade.contact.form</field>
+        <field name="model">trade.contact</field>
+        <field name="arch" type="xml">
+            <form string="Trade Contact">
+                <sheet>
+                    <h1><field name="sequence"/></h1>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="trade_contact_tree" model="ir.ui.view">
+        <field name="name">trade.contact.tree</field>
+        <field name="model">trade.contact</field>
+        <field name="arch" type="xml">
+            <tree name="Trade Contact">
+                <field name="sequence"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="trade_contact_action" model="ir.actions.act_window">
+        <field name="name">Trade Contact</field>
+        <field name="res_model">trade.contact</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="trade_contact_menu"
+              name="Trade Contact"
+              parent="contact_menu"
+              action="trade_contact_action"
+              sequence="10"/>
+
+</odoo>
