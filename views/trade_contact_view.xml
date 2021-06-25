@@ -35,7 +35,7 @@
 
     <menuitem id="trade_contact_menu"
               name="Trade Contact"
-              parent="contact_menu"
+              parent="trade_menu"
               action="trade_contact_action"
               sequence="10"/>
 

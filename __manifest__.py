@@ -4,18 +4,20 @@
     'name': 'Trade Contact',
     'version': '1.1',
     'summary': 'Trade Contact',
-    'sequence': 15,
+    'sequence': 18,
     'description': 'Trade Contact',
     'category': 'New',
     'website': 'https://www.odoo.com/page/billing',
     'images': [],
     'depends': ['base', 'web', 'mail'],
     'data': [
-        'data/trade_contact.xml',
-        'data/category.xml',
+        'data/trade_contact_data.xml',
         'security/trade_contact_security.xml',
         'security/ir.model.access.csv',
-        'views/menu_view.xml'
+        'views/menu_view.xml',
+        'views/sagmart_view.xml',
+        'views/history_view.xml',
+        'wizard/crawl_service_view.xml'
 
     ],
     'demo': [],
