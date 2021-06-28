@@ -2,4 +2,8 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 trade_contact_admin,trade.contact.admin,model_trade_contact,trade_contact_admin,1,1,1,1
 sag_mart_admin,sag.mart.admin,model_sag_mart,trade_contact_admin,1,1,1,1
 history_history_admin,history.history.admin,model_history_history,trade_contact_admin,1,1,1,1
+trade_country_admin,trade.country.admin,model_trade_country,trade_contact_admin,1,1,1,1
+trade_country_state_admin,trade.country.state.admin,model_trade_country_state,trade_contact_admin,1,1,1,1
+trade_district_admin,trade.district.admin,model_trade_district,trade_contact_admin,1,1,1,1
+trade_area_admin,trade.area.admin,model_trade_area,trade_contact_admin,1,1,1,1
 crawl_service_admin,crawl.service.admin,model_crawl_service,trade_contact_admin,1,1,1,1

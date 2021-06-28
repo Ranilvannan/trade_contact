@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="trade_country_form" model="ir.ui.view">
+        <field name="name">trade.country.form</field>
+        <field name="model">trade.country</field>
+        <field name="arch" type="xml">
+            <form string="Country">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="trade_country_tree" model="ir.ui.view">
+        <field name="name">trade.country.tree</field>
+        <field name="model">trade.country</field>
+        <field name="arch" type="xml">
+            <tree name="Country">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="trade_country_action" model="ir.actions.act_window">
+        <field name="name">Country</field>
+        <field name="res_model">trade.country</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="trade_country_menu"
+              name="Country"
+              parent="trade_menu"
+              action="trade_country_action"
+              sequence="30"/>
+
+</odoo>

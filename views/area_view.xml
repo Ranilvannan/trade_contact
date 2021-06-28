@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="trade_area_form" model="ir.ui.view">
+        <field name="name">trade.area.form</field>
+        <field name="model">trade.area</field>
+        <field name="arch" type="xml">
+            <form string="Area">
+                <sheet>
+                    <group>
+                        <field name="district_id"/>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="trade_area_tree" model="ir.ui.view">
+        <field name="name">trade.area.tree</field>
+        <field name="model">trade.area</field>
+        <field name="arch" type="xml">
+            <tree name="Area">
+                <field name="district_id"/>
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="trade_area_action" model="ir.actions.act_window">
+        <field name="name">Area</field>
+        <field name="res_model">trade.area</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="trade_area_menu"
+              name="Area"
+              parent="trade_menu"
+              action="trade_area_action"
+              sequence="60"/>
+
+</odoo>
